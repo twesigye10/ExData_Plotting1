@@ -1,3 +1,4 @@
+library(dplyr)
 library(lubridate)
 
 # read the data and create a date time column
@@ -17,5 +18,5 @@ legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_
        lty=1, cex = 0.5)
 
 # copy to png
-dev.copy(png, "plot3.png")
+dev.copy(png, "plot3.png", width=480, height=480)
 dev.off()

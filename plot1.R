@@ -6,5 +6,5 @@ hist(df_hpc_extract$Global_active_power,
      xlab = "Global active power (Kilowatts)", 
      col = "red")
 
-dev.copy(png, "plot1.png")
+dev.copy(png, "plot1.png", width=480, height=480)
 dev.off()

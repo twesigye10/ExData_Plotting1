@@ -1,3 +1,4 @@
+library(dplyr)
 library(lubridate)
 
 # read the data and create a date time column
@@ -10,5 +11,5 @@ plot(df_hpc_extract$DateTime, df_hpc_extract$Global_active_power, type = "l",
      xlab = "", 
      ylab = "Global active power (Kilowatts)")
 
-dev.copy(png, "plot2.png")
+dev.copy(png, "plot2.png", width=480, height=480)
 dev.off()

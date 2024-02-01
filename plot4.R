@@ -1,3 +1,4 @@
+library(dplyr)
 library(lubridate)
 
 # read the data and create a date time column
@@ -27,5 +28,5 @@ legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_
 plot(df_hpc_extract$DateTime, df_hpc_extract$Global_reactive_power, type = "l", xlab = "datetime", ylab = "Global reactive power")
 
 # copy to png
-dev.copy(png, "plot4.png")
+dev.copy(png, "plot4.png", width=480, height=480)
 dev.off()
